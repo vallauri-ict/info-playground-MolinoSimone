@@ -40,5 +40,16 @@ namespace WindowsForms01
             f2.Text = "Form 2 con passaggio di un TextBox ";
             f2.Show();
         }
+
+        private void btnApriFormModale_Click(object sender, EventArgs e)
+        {
+            FormModale frm = new FormModale();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show("Premuto pulsante ok\nNome: " + frm.nome + " Età: " + frm.età);
+            }
+            else
+                MessageBox.Show("Premuto pulsante Annulla");
+        }
     }
 }

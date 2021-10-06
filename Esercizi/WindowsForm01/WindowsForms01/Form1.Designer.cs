@@ -33,6 +33,7 @@ namespace WindowsForms01
             this.btnApriF2b = new System.Windows.Forms.Button();
             this.txtDaPassare = new System.Windows.Forms.TextBox();
             this.btnF2Controllo = new System.Windows.Forms.Button();
+            this.btnApriFormModale = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnApriF2
@@ -71,11 +72,22 @@ namespace WindowsForms01
             this.btnF2Controllo.UseVisualStyleBackColor = true;
             this.btnF2Controllo.Click += new System.EventHandler(this.btnF2Controllo_Click);
             // 
+            // btnApriFormModale
+            // 
+            this.btnApriFormModale.Location = new System.Drawing.Point(13, 130);
+            this.btnApriFormModale.Name = "btnApriFormModale";
+            this.btnApriFormModale.Size = new System.Drawing.Size(149, 44);
+            this.btnApriFormModale.TabIndex = 4;
+            this.btnApriFormModale.Text = "Apri Form Modale";
+            this.btnApriFormModale.UseVisualStyleBackColor = true;
+            this.btnApriFormModale.Click += new System.EventHandler(this.btnApriFormModale_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnApriFormModale);
             this.Controls.Add(this.btnF2Controllo);
             this.Controls.Add(this.txtDaPassare);
             this.Controls.Add(this.btnApriF2b);
@@ -94,6 +106,7 @@ namespace WindowsForms01
         private System.Windows.Forms.Button btnApriF2b;
         private System.Windows.Forms.TextBox txtDaPassare;
         private System.Windows.Forms.Button btnF2Controllo;
+        private System.Windows.Forms.Button btnApriFormModale;
     }
 }
 

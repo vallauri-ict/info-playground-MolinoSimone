@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsForm02
+namespace Molino_Simone
 {
-    public partial class Figlia2 : Form
+    public partial class ModaleEsci : Form
     {
-        public Figlia2()
+        public ModaleEsci()
         {
             InitializeComponent();
-        }
-
-        private void Figlia2_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -89,6 +89,8 @@ namespace WindowsForm03___Esercitazione_Verifica
             this.Controls.Add(this.ckbPelle);
             this.Name = "Figlia1";
             this.Text = "Figlia1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Figlia1_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Figlia1_FormClosed);
             this.Load += new System.EventHandler(this.Figlia1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

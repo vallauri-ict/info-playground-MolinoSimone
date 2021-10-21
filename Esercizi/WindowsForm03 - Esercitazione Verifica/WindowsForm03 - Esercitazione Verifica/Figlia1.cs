@@ -15,6 +15,7 @@ namespace WindowsForm03___Esercitazione_Verifica
         public string ckb1b="";
         public string ckb2b="";
         public string combob="";
+        public bool f1Aperto=false;
         public Figlia1()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace WindowsForm03___Esercitazione_Verifica
 
         private void Figlia1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnInvia_Click(object sender, EventArgs e)
@@ -54,6 +55,16 @@ namespace WindowsForm03___Esercitazione_Verifica
             
 
 
+        }
+
+        private void Figlia1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            f1Aperto = false;
+        }
+
+        private void Figlia1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            f1Aperto = false;
         }
     }
 }

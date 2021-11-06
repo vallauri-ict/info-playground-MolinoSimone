@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP5 - Ereditarietà 2", "OOP5 - Ereditarietà 2\OOP5 - Ereditarietà 2.csproj", "{9E930C87-0F2B-464C-8072-6A5AA207BFD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E930C87-0F2B-464C-8072-6A5AA207BFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E930C87-0F2B-464C-8072-6A5AA207BFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E930C87-0F2B-464C-8072-6A5AA207BFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E930C87-0F2B-464C-8072-6A5AA207BFD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7880B6E0-6256-4DC0-A208-BD0268BB0D67}
+	EndGlobalSection
+EndGlobal

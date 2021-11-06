@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP3-Squadre di calcio", "OOP3-Squadre di calcio\OOP3-Squadre di calcio.csproj", "{68DD535A-8F0F-4663-9D5A-7D3481ED15EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68DD535A-8F0F-4663-9D5A-7D3481ED15EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DD535A-8F0F-4663-9D5A-7D3481ED15EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DD535A-8F0F-4663-9D5A-7D3481ED15EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DD535A-8F0F-4663-9D5A-7D3481ED15EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5521AC4C-DC17-49F5-B7E3-CAFB3296DEC2}
+	EndGlobalSection
+EndGlobal

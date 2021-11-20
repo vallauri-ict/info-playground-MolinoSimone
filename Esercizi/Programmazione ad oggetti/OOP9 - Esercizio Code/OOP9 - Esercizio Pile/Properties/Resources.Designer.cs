@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace OOP09___Esercizio_Coda.Properties
+namespace OOP9___Esercizio_Pile.Properties
 {
     /// <summary>
     ///   Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
@@ -43,7 +43,7 @@ namespace OOP09___Esercizio_Coda.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OOP09___Esercizio_Coda.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OOP9___Esercizio_Pile.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

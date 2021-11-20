@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8899E2CA-67AC-4F56-B9FC-4F6D7265922F}</ProjectGuid>
+    <ProjectGuid>{75CB05AE-D4D1-4B62-84B6-8F50DB5257D4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>OOP09___Esercizio_Coda</RootNamespace>
-    <AssemblyName>OOP09 - Esercizio Coda</AssemblyName>
+    <RootNamespace>OOP9___Esercizio_Pile</RootNamespace>
+    <AssemblyName>OOP9 - Esercizio Pile</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

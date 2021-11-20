@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OOP09___Esercizio_Coda
+namespace OOP10___Esercizio_Pile
 {
     static class Program
     {

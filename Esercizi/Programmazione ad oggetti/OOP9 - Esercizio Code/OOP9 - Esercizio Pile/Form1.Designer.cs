@@ -1,5 +1,5 @@
 ﻿
-namespace OOP09___Esercizio_Coda
+namespace OOP9___Esercizio_Pile
 {
     partial class Form1
     {
@@ -30,9 +30,9 @@ namespace OOP09___Esercizio_Coda
         private void InitializeComponent()
         {
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEta = new System.Windows.Forms.TextBox();
+            this.txtCodice = new System.Windows.Forms.TextBox();
+            this.txtTemp = new System.Windows.Forms.TextBox();
             this.btnValoriTemperaturaMaxMin = new System.Windows.Forms.Button();
             this.btnRichiediPaziente = new System.Windows.Forms.Button();
             this.btnInserisciPaziente = new System.Windows.Forms.Button();
@@ -51,26 +51,26 @@ namespace OOP09___Esercizio_Coda
             this.txtNome.Size = new System.Drawing.Size(100, 22);
             this.txtNome.TabIndex = 0;
             // 
-            // textBox2
+            // txtEta
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 1;
+            this.txtEta.Location = new System.Drawing.Point(123, 70);
+            this.txtEta.Name = "txtEta";
+            this.txtEta.Size = new System.Drawing.Size(100, 22);
+            this.txtEta.TabIndex = 1;
             // 
-            // textBox3
+            // txtCodice
             // 
-            this.textBox3.Location = new System.Drawing.Point(123, 98);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 2;
+            this.txtCodice.Location = new System.Drawing.Point(123, 98);
+            this.txtCodice.Name = "txtCodice";
+            this.txtCodice.Size = new System.Drawing.Size(100, 22);
+            this.txtCodice.TabIndex = 2;
             // 
-            // textBox4
+            // txtTemp
             // 
-            this.textBox4.Location = new System.Drawing.Point(123, 126);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 3;
+            this.txtTemp.Location = new System.Drawing.Point(123, 126);
+            this.txtTemp.Name = "txtTemp";
+            this.txtTemp.Size = new System.Drawing.Size(100, 22);
+            this.txtTemp.TabIndex = 3;
             // 
             // btnValoriTemperaturaMaxMin
             // 
@@ -80,6 +80,7 @@ namespace OOP09___Esercizio_Coda
             this.btnValoriTemperaturaMaxMin.TabIndex = 4;
             this.btnValoriTemperaturaMaxMin.Text = "Valori Min Max Temperatura";
             this.btnValoriTemperaturaMaxMin.UseVisualStyleBackColor = true;
+            this.btnValoriTemperaturaMaxMin.Click += new System.EventHandler(this.btnValoriTemperaturaMaxMin_Click);
             // 
             // btnRichiediPaziente
             // 
@@ -89,6 +90,7 @@ namespace OOP09___Esercizio_Coda
             this.btnRichiediPaziente.TabIndex = 5;
             this.btnRichiediPaziente.Text = "Richiesta Paziente";
             this.btnRichiediPaziente.UseVisualStyleBackColor = true;
+            this.btnRichiediPaziente.Click += new System.EventHandler(this.btnRichiediPaziente_Click);
             // 
             // btnInserisciPaziente
             // 
@@ -98,11 +100,12 @@ namespace OOP09___Esercizio_Coda
             this.btnInserisciPaziente.TabIndex = 6;
             this.btnInserisciPaziente.Text = "Inserisci Paziente";
             this.btnInserisciPaziente.UseVisualStyleBackColor = true;
+            this.btnInserisciPaziente.Click += new System.EventHandler(this.btnInserisciPaziente_Click);
             // 
             // lblPazienteOut
             // 
             this.lblPazienteOut.AutoSize = true;
-            this.lblPazienteOut.Location = new System.Drawing.Point(440, 255);
+            this.lblPazienteOut.Location = new System.Drawing.Point(486, 146);
             this.lblPazienteOut.Name = "lblPazienteOut";
             this.lblPazienteOut.Size = new System.Drawing.Size(0, 17);
             this.lblPazienteOut.TabIndex = 7;
@@ -110,7 +113,7 @@ namespace OOP09___Esercizio_Coda
             // lblTemperatureMaxMin
             // 
             this.lblTemperatureMaxMin.AutoSize = true;
-            this.lblTemperatureMaxMin.Location = new System.Drawing.Point(440, 325);
+            this.lblTemperatureMaxMin.Location = new System.Drawing.Point(486, 272);
             this.lblTemperatureMaxMin.Name = "lblTemperatureMaxMin";
             this.lblTemperatureMaxMin.Size = new System.Drawing.Size(0, 17);
             this.lblTemperatureMaxMin.TabIndex = 8;
@@ -155,7 +158,7 @@ namespace OOP09___Esercizio_Coda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(709, 466);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -165,12 +168,13 @@ namespace OOP09___Esercizio_Coda
             this.Controls.Add(this.btnInserisciPaziente);
             this.Controls.Add(this.btnRichiediPaziente);
             this.Controls.Add(this.btnValoriTemperaturaMaxMin);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTemp);
+            this.Controls.Add(this.txtCodice);
+            this.Controls.Add(this.txtEta);
             this.Controls.Add(this.txtNome);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,9 +183,9 @@ namespace OOP09___Esercizio_Coda
         #endregion
 
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEta;
+        private System.Windows.Forms.TextBox txtCodice;
+        private System.Windows.Forms.TextBox txtTemp;
         private System.Windows.Forms.Button btnValoriTemperaturaMaxMin;
         private System.Windows.Forms.Button btnRichiediPaziente;
         private System.Windows.Forms.Button btnInserisciPaziente;

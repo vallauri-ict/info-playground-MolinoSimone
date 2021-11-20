@@ -37,18 +37,21 @@ namespace OOP8___Esercizio_Dizionario
             this.txtInput = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.lblArticolo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtKey
             // 
-            this.txtKey.Location = new System.Drawing.Point(56, 30);
+            this.txtKey.Location = new System.Drawing.Point(119, 30);
             this.txtKey.Name = "txtKey";
             this.txtKey.Size = new System.Drawing.Size(100, 22);
             this.txtKey.TabIndex = 0;
             // 
             // txtNomeArticolo
             // 
-            this.txtNomeArticolo.Location = new System.Drawing.Point(56, 75);
+            this.txtNomeArticolo.Location = new System.Drawing.Point(119, 75);
             this.txtNomeArticolo.Name = "txtNomeArticolo";
             this.txtNomeArticolo.Size = new System.Drawing.Size(100, 22);
             this.txtNomeArticolo.TabIndex = 1;
@@ -83,7 +86,7 @@ namespace OOP8___Esercizio_Dizionario
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(56, 240);
+            this.txtInput.Location = new System.Drawing.Point(119, 239);
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(100, 22);
             this.txtInput.TabIndex = 5;
@@ -106,11 +109,41 @@ namespace OOP8___Esercizio_Dizionario
             this.lblArticolo.Size = new System.Drawing.Size(0, 17);
             this.lblArticolo.TabIndex = 7;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(50, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Key:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(50, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Articolo:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(50, 244);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Key input:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblArticolo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtInput);
@@ -136,6 +169,9 @@ namespace OOP8___Esercizio_Dizionario
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblArticolo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -54,6 +54,11 @@ namespace OOP9___Esercizio_Pile
             else
                 codaBianca.Enqueue(p);
             calcolaMinMax();
+            txtCodice.Text = "";
+            txtEta.Text = "";
+            txtNome.Text = "";
+            txtTemp.Text = "";
+            txtNome.Focus();
         }
 
         private void btnRichiediPaziente_Click(object sender, EventArgs e)

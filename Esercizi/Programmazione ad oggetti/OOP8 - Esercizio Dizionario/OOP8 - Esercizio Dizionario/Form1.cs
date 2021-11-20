@@ -27,6 +27,8 @@ namespace OOP8___Esercizio_Dizionario
             articolo l;
             l.nomeArticolo = txtNomeArticolo.Text;
             dizionarioArticoli.Add(Convert.ToInt32(txtKey.Text), l);
+            txtNomeArticolo.Text = "";
+            txtKey.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,9 +38,19 @@ namespace OOP8___Esercizio_Dizionario
 
         private void button2_Click(object sender, EventArgs e)
         {
-            foreach (articolo l in dizionarioArticoli.Values)
-                    lblArticolo.Text = l.nomeArticolo;
-                
+            try
+            {
+                articolo a = dizionarioArticoli[Convert.ToInt32(txtInput.Text)];
+                lblArticolo.Text = "Articolo: " + a.nomeArticolo + "\nChiave: " + txtInput.Text;
+            }
+            catch (KeyNotFoundException)
+            {
+                MessageBox.Show("Errore: Chiave non trovata!");
+                throw;
+            }
+            
+            //MessageBox.Show("Articolo: " + a.nomeArticolo + "\nChiave: " + txtInput.Text);
+
 
         }
     }
